@@ -9,36 +9,14 @@
   <link rel="stylesheet" href="style.css"> 
   <link rel="stylesheet" href="sidebar.css"> 
   <style>
+ #sidebar_top_home{background-color: #335faf!important;}
+ #sidebar_top_home a{    color: #ffffff;}
 
-
-
-
-
-      banner{
-        background-color: #1c4269;
-        display: block;
-        color: white;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: flex;
-        justify-content: center;
-      }
-    banner_content{text-align: center;}
-    banner_content h1{ font-size: 3em; }
-    banner_content p{color: #6d8eb1;}
-    contenido{     display: block; padding: 20px;}
-     contenido a{ color: #335faf;; text-decoration: none;}
-     contenido a:hover { color: #335faf; text-decoration: underline;}
-     .susurro{color: #a5a5a59e; padding-top: 10px;
-    padding-bottom: 10px;}
-    contenido section{ background-color:     background-color: #ffffff; }
-    /* section h2{text-decoration: underline;} */
+ #mobile_sidebar_top_home{background-color: #335faf!important;}
+ #mobile_sidebar_top_home a{    color: #ffffff;}
   </style>
 </head>
 <body> 
-  
   <mobile_navbar  > 
   
     <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
@@ -53,22 +31,22 @@
       "><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title" style="opacity: 0;"> inicio </sidebar_link_title>  </li></a></ul>
     <ul id="sidebar_options" style=" padding: 15px; padding-top: 0;" >
       <a href="linea_de_tiempo.html"><li ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
-      <a href="personajes.html"><li  ><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
+      <a href="personajes.html"><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
       <a href="especies.html" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
-      <a href="mundos.html" ><li  style="background-color: #335faf;color: white;" ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+      <a href="mundos.html" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
       <a href="items.html" ><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
       <a href="hechizos.html" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
       <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
     </ul>
   </mobile_sidebar>
   <sidebar  id="sidebar">
-    <ul style="    background-color: black;">   <a href="index.html"><li style="    padding: 15px;
+    <ul id="sidebar_top_home"  style="    background-color: black;">   <a href="sidebar_menu_collapsible.html"><li style="    padding: 15px;
       padding-left: 22px;"><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title>  </li></a></ul>
     <ul id="sidebar_options" style=" padding: 15px;" >
       <a href="linea_de_tiempo.html"><li ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
       <a href="personajes.html"><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
-      <a href="especies.html" ><li   > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
-      <a href="mundos.html" ><li style="background-color: #335faf;color: white;" ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+      <a href="especies.html" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
+      <a href="mundos.html" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
       <a href="items.html" ><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
       <a href="hechizos.html" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
       <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
@@ -87,59 +65,44 @@
    
     
 
+    <div style=" padding: 20px; width: 100%;">
   
      
 
       <!-- ------------------------------------------------ -->
-      <!-- -------------- linea de tiempo   ---------------------- -->
+      <!-- -------------- cosas que hacer  ---------------------- -->
       <!-- ------------------------------------------------ -->
-   <second_sidebar> hola </second_sidebar>
-   <div style="width: -webkit-fill-available;">
-      <banner>
-        <banner_content>    
-           <h1 style=" margin-top: 0px;">Mundos</h1>
-           <p> texto de mundos </p> 
-        </banner_content>
-      </banner>
-
-      <contenido> 
-   
-
-   <!-- ------------------------------------------------ -->
-    <!-- -------------- mundos  ---------------------- -->
-    <!-- ------------------------------------------------ -->
-    
-
-    
-    <ul>
-      <li><a href="mundos/mortis.html">  mortis </a></li>
-      <li><a href="mundos/mundo_primigenio.html">  mundo de los primigenios </a></li>
-      <li><a href="mundos/mundo_del_cristal.html"> mundo donde cayo el cristal del heredero de el primer angel  </a></li>
-      <li><a href="mundos/mundo_nix.html"> mundo de nix </a></li>
-      
-    </ul>
-      
-      
-      </contenido>
+      <h2  style=" margin-top: 0px;">Cosas que hacer</h2>
+  
      
-     
+      <ul>
+        <li> buscar nombre para la serpiente </li>
+        <li> buscar nombre para los angeles </li>
+        <li> buscar nombre para el leon </li>
+        <li> hacer que algunos primigenios adoren a el leon  </li>
+        <li> buscar nombre para la raza primigenia </li>
+        <li> darle un rol al segundo angel </li>
+    
+      </ul>
+  
+      </div>
   </main>
 </body>   
 <script>
 
-  function openmobileNav() {
-    // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
-    document.getElementById("mobile_sidebar").style.height = "auto";
-    document.getElementById("open_mobile_nav").style.display = "none";
-     document.getElementById("close_mobile_nav").style.display = "inherit";
-    }
-  
-    function closemobileNav() {
-    // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
-    document.getElementById("mobile_sidebar").style.height = "0px";
-    document.getElementById("open_mobile_nav").style.display = "inherit";
-     document.getElementById("close_mobile_nav").style.display = "none";
-    }
-  </script>
+function openmobileNav() {
+  // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+  document.getElementById("mobile_sidebar").style.height = "auto";
+  document.getElementById("open_mobile_nav").style.display = "none";
+   document.getElementById("close_mobile_nav").style.display = "inherit";
+  }
+
+  function closemobileNav() {
+  // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+  document.getElementById("mobile_sidebar").style.height = "0px";
+  document.getElementById("open_mobile_nav").style.display = "inherit";
+   document.getElementById("close_mobile_nav").style.display = "none";
+  }
+</script>
 <script src="sidebar_toogle.js"></script>
 </html>
