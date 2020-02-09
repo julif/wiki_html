@@ -48,6 +48,13 @@ main{
     display: flex;
     /* display: block; */
 }
+
+
+
+
+
+main ul{ padding-left: 26px;}
+main li{ margin-bottom: 8px;}
 second_sidebar{    background-color: #1c4269; ;
     width: 350px;
      display: none; 
