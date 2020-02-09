@@ -4,152 +4,143 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title> Linea de tiempo </title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    <!-- --- Jquery --- --> 
+  <title></title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="sidebar.css"> 
   <style>
-    body{ 
-      font-family: "proxima-nova",sans-serif; 
-      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-      margin: 0px auto;
+
+
+
+
+
+      banner{
+        background-color: #1c4269;
+        display: block;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: center;
       }
-      container{    background-color: #ffffff;
-    display: flex;
-    padding-left: 290px;}
-      sidebar{
-      
-  /* padding: 20px;text-transform: capitalize;
- 
-  width: 10%;
-    height: 100%;    */
-    
-    
-    
-    
-     position: fixed;
-    left: 0;
-    top: 0;
-    width: 260px;
-    height: 100%;
-    display: table;
-    background-color: #14151d; 
-    color: #d0d0d0; 
-    font-weight: 600;
-    table-layout: fixed;
-    z-index: 2;
-    transition: width .3s cubic-bezier(.2,.3,.25,.9) 0s;
-    padding: 15px;
-
-
-
-
-
-
-      }
-      sidebar ul{margin: 0;
-    padding: 0;}
-    sidebar a{  color: #d0d0d0;     text-decoration: none;}
-      sidebar li{ 
-        list-style: none;
-        /* background-color: red; */
-       padding: 30px;padding: 8px;
-    margin-bottom: 5px;
-        }
-        sidebar li:hover{ background-color: #24252d;color: white;}
-        i{    margin-right: 15px; width: 21px;text-align: center;}
-
-
-
-        section{   
-           background: #293546 !important;
-           border-radius: 9px !important;
-           color: white;
-        }
-        section a{
-          color: #82befd;
-          text-decoration: none;
-        }
-        .susurro{ 
-          color: #656d78 !important;
-          font-size: 20px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 15px;
-          }
-          section ul{     font-weight: 600;}
-        section li{ 
-              /* list-style: none; */
-    /* font-family: "proxima-nova",sans-serif !important; */
-    font-size: 20px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 15px;
-    /* color: #444; */
-    /* padding-left: 15px; */
-    padding-right: 15px;
-}
-
-         
+    banner_content{text-align: center;}
+    banner_content h1{ font-size: 3em; }
+    banner_content p{color: #6d8eb1;}
+    contenido{     display: block; padding: 20px;}
+     contenido a{ color: #335faf;; text-decoration: none;}
+     contenido a:hover { color: #335faf; text-decoration: underline;}
+     .susurro{color: #a5a5a59e; padding-top: 10px;
+    padding-bottom: 10px;}
+    contenido section{ background-color:     background-color: #ffffff; }
+    /* section h2{text-decoration: underline;} */
   </style>
 </head>
 <body> 
-  <container>
-  <sidebar >
- 
-    <ul>
-      <a href="index2.html"><li><i class="fas fa-home"></i>  Inicio </li></a>
-      <a href="linea_de_tiempo.html"><li style="background-color: #335faf;color: white;"><i class="fas fa-sitemap" ></i>    linea de tiempo </li></a>
-      <a href="personajes.html"><li><i class="fas fa-user"></i>  personajes </li></a>
-      <a href="especies.html" ><li > <i class="fas fa-address-book"></i> especies </li></a>
-      <a href="mundos.html" ><li ><i class="fas fa-globe-europe"></i>  mundos </li></a>
-      <a href="items.html" ><li ><i class="fas fa-cube"></i>  items </li></a>
-      <a href="hechizos.html" ><li > <i class="fas fa-magic"></i>  hechizos </li></a>
-      <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i>leyendas </li></a>
-    </ul>
-    
-    
-    
-    
-  </sidebar>
-  <div style=" padding: 20px; width: 100%;">
-  <!-- ------------------------------------------------ -->
-  <!-- ------------ Linea de tiempo ------------------- -->
-  <!-- ------------------------------------------------ -->
-  <h1  style=" margin-top: 0px;  text-align: center;">Linea de tiempo</h1>
-  <!-- ------------ Era de los antiguos  ------------------- -->
-  <section style="background-color: #c2d2da; padding: 20px;margin-bottom: 20px;">
-    <h2  style="margin-top: 0;     color: #82befd;" >Era de los antiguos</h2>
-    <ul>
-      <li> al principio la oscuridad era todo lo que existia</li>
-      <li> big-bang, la creacion del universo</li>
-      <li> al existir la luz la oscuridad encontro sus limites y fue conciente de si misma ( <a href="personajes/serpiente_negra.html">serpiente negra</a> ).</li>
-      <li> la <a href="personajes/serpiente_negra.html">serpiente negra</a>   queda cegada.</li>
-      <li> la luz del big bang tambien tomo forma, por un lado el univero y por otro los 3 angeles o antiguos :<a href="personajes/primer_angel.html">el primer angel</a>  <a href="personajes/segundo_angel.html">el segundo angel</a> y <a href="personajes/tercer_angel.html">el tercer angel</a></li>
-      <li> creacion de el <a href="personajes/leon_arena.html">leon de arena</a> para proteger el tiempo.</li>
-      <li> los angeles descubren y ayudan a criar a la primera forma de vida biologica, nace la <a href="especies/primigenios.html">  Raza primigenia </a> </li>
-      <li> regreso de la <a href="personajes/serpiente_negra.html">serpiente negra</a> </li>
-      <li> la <a href="personajes/serpiente_negra.html">serpiente negra</a> negra recupera la vista y ataca a los angeles</li>
-      <div class="susurro"> —- lucha contra la serpiente negra —– </div>
-      <li> infecion de <a href="personajes/primer_angel.html">el primer angel</a>  </li>
-      <li> captura de la serpiente negra en la <a href="items/prision_kasedrim.html">  prision kasedrim </a></li>
-      <li> los angeles esconden la prision piramide en un planeta al borde de el universo </li>
-      <li> el <a href="personajes/primer_angel.html">el primer angel</a> se exilia </li>
-      <li> el <a href="personajes/primer_angel.html">el primer angel</a> se corrompe</li>
-      <li> el <a href="personajes/primer_angel.html">el primer angel</a> crea un ejercito corrompiendo seres primigenios y nombra a la mas poderosa de estas criaturas como general de su ejercito.</li>
-      <li> creacion de los  <a href="especies/demonios.html">  Demonios </a> </li>
-      <li> creacion de  <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a></li>
-      <li> creacion de el ejercito de el primer angel </li>
-     
-      <div class="susurro">  —- guerra de los angeles —– </div>
-      <li> muerte de <a href="personajes/segundo_angel.html">el segundo angel</a> </li>
-      <li> traicion de <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a> a su amo </li>
-      <li> muerte de el primer angel </li>
-      <li>  muerte de el segundo angel </li>
-      <li> antes de morir <a href="personajes/tercer_angel.html">el tercer angel</a> encierra a  <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a>   en cristal</li>
-      
+  
+  <mobile_navbar  > 
+  
+    <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
+    <i  style="display: none;" id="close_mobile_nav" onclick="closemobileNav()" class="fas fa-times"></i>
+  </mobile_navbar>
+  <mobile_sidebar id="mobile_sidebar"> 
 
+    <ul id="mobile_sidebar_top_home" style="    background-color: #14151d;">   <a href="index.html"><li style="    padding: 15px;
+      padding-left: 22px;"><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title>  </li></a></ul>
+    <ul id="sidebar_options" style=" padding: 15px;" >
+      <a href="linea_de_tiempo.html"><li ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
+      <a href="personajes.html"><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
+      <a href="especies.html" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
+      <a href="mundos.html" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+      <a href="items.html" ><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
+      <a href="hechizos.html" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
+      <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
     </ul>
-  </section>
-  <!-- ------------ Era de los dioses  ------------------- -->
-  <section style="background-color: #c5c2da; padding: 20px;">
-    <h2  style="margin-top: 0;     color: #82befd;" >Era de los dioses </h2>
+  </mobile_sidebar>
+  <sidebar  id="sidebar">
+    <ul style="    background-color: black;">   <a href="index.html"><li style="    padding: 15px;
+      padding-left: 22px;"><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title>  </li></a></ul>
+    <ul id="sidebar_options" style=" padding: 15px;" >
+      <a href="linea_de_tiempo.html"><li style="background-color: #335faf;
+        color: white;" ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
+      <a href="personajes.html"><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
+      <a href="especies.html" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
+      <a href="mundos.html" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+      <a href="items.html" ><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
+      <a href="hechizos.html" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
+      <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
+    </ul  >
+    <!-- <i class="fas fa-angle-left"></i> -->
+    <sidebar_footer>   
+       <!-- <button id="open_nav" ><i   onclick="openNav()" class="fas fa-angle-right"></i></button>
+      <button onclick="closeNav()" id="close_nav"><i class="fas fa-angle-left"></i></button>  -->
+
+     <i   id="open_nav" onclick="openNav()" class="fas fa-angle-right"></i>
+     <i  id="close_nav" onclick="closeNav()" class="fas fa-angle-left"></i>
+    </sidebar_footer>
+
+  </sidebar>
+  <main id="main">    
+   
+    
+
+  
+     
+
+      <!-- ------------------------------------------------ -->
+      <!-- -------------- linea de tiempo   ---------------------- -->
+      <!-- ------------------------------------------------ -->
+   <second_sidebar> hola </second_sidebar>
+   <div style="width: -webkit-fill-available;">
+      <banner>
+        <banner_content>    
+           <h1 style=" margin-top: 0px;">Linea de tiempo</h1>
+           <p> texto de la linea de tiempo </p> 
+        </banner_content>
+      </banner>
+
+      <contenido> 
+         <p> texto de la linea de tiempo </p>  
+      
+      
+         <section style="padding: 20px;margin-bottom: 20px;">
+          <h2  style="margin-top: 0;     color: #060606;" >Era de los antiguos</h2>
+          <ul>
+            <li> al principio la oscuridad era todo lo que existia</li>
+            <li> big-bang, la creacion del universo</li>
+            <li> al existir la luz la oscuridad encontro sus limites y fue conciente de si misma ( <a href="personajes/serpiente_negra.html">serpiente negra</a> ).</li>
+            <li> la <a href="personajes/serpiente_negra.html">serpiente negra</a>   queda cegada.</li>
+            <li> la luz del big bang tambien tomo forma, por un lado el univero y por otro los 3 angeles o antiguos :<a href="personajes/primer_angel.html">el primer angel</a>  <a href="personajes/segundo_angel.html">el segundo angel</a> y <a href="personajes/tercer_angel.html">el tercer angel</a></li>
+            <li> creacion de el <a href="personajes/leon_arena.html">leon de arena</a> para proteger el tiempo.</li>
+            <li> los angeles descubren y ayudan a criar a la primera forma de vida biologica, nace la <a href="especies/primigenios.html">  Raza primigenia </a> </li>
+            <li> regreso de la <a href="personajes/serpiente_negra.html">serpiente negra</a> </li>
+            <li> la <a href="personajes/serpiente_negra.html">serpiente negra</a> negra recupera la vista y ataca a los angeles</li>
+            <div class="susurro"> —- lucha contra la serpiente negra —– </div>
+            <li> infecion de <a href="personajes/primer_angel.html">el primer angel</a>  </li>
+            <li> captura de la serpiente negra en la <a href="items/prision_kasedrim.html">  prision kasedrim </a></li>
+            <li> los angeles esconden la prision piramide en un planeta al borde de el universo </li>
+            <li> el <a href="personajes/primer_angel.html">el primer angel</a> se exilia </li>
+            <li> el <a href="personajes/primer_angel.html">el primer angel</a> se corrompe</li>
+            <li> el <a href="personajes/primer_angel.html">el primer angel</a> crea un ejercito corrompiendo seres primigenios y nombra a la mas poderosa de estas criaturas como general de su ejercito.</li>
+            <li> creacion de los  <a href="especies/demonios.html">  Demonios </a> </li>
+            <li> creacion de  <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a></li>
+            <li> creacion de el ejercito de el primer angel </li>
+           
+            <div class="susurro">  —- guerra de los angeles —– </div>
+            <li> muerte de <a href="personajes/segundo_angel.html">el segundo angel</a> </li>
+            <li> traicion de <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a> a su amo </li>
+            <li> muerte de el primer angel </li>
+            <li>  muerte de el segundo angel </li>
+            <li> antes de morir <a href="personajes/tercer_angel.html">el tercer angel</a> encierra a  <a href="personajes/heredero_primer_angel.html">el heredero de el primer angel</a>   en cristal</li>
+            
+      
+          </ul>
+        </section>
+
+        <!-- ------------ Era de los dioses  ------------------- -->
+  <section style=" padding: 20px;">
+    <h2  style="margin-top: 0;     color: black;" >Era de los dioses </h2>
     <ul>
       <li> la raza primigenia que se alimentaba de la luz de los angeles se queda sin su principal fuente de energia </li> 
       <li> los remanentes de el ejercito de el primer angel siembran caos por el universo </li>
@@ -179,7 +170,28 @@
       <li> <a href="personajes/madre_nix.html"> la madre de nix </a> recive de regalo, reliquias antiguas de los primigenios, entre ellas <a href="items/daga_tinieblas.html">  la daga de las tinieblas </a></li>
     </ul>
   </section>
-</div>
-</container>
+      
+      
+      </contenido>
+     
+     
+  </main>
 </body>   
+<script>
+
+  function openmobileNav() {
+    // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+    document.getElementById("mobile_sidebar").style.height = "auto";
+    document.getElementById("open_mobile_nav").style.display = "none";
+     document.getElementById("close_mobile_nav").style.display = "inherit";
+    }
+  
+    function closemobileNav() {
+    // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+    document.getElementById("mobile_sidebar").style.height = "0px";
+    document.getElementById("open_mobile_nav").style.display = "inherit";
+     document.getElementById("close_mobile_nav").style.display = "none";
+    }
+  </script>
+<script src="sidebar_toogle.js"></script>
 </html>
