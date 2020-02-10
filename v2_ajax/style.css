@@ -1,0 +1,105 @@
+body{ 
+    font-family: "proxima-nova",sans-serif; 
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0px auto;
+    font-weight: 600;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+p{ font-weight: 600;}
+
+ 
+i{    margin-right: 15px; width: 21px; text-align: center;}
+
+
+mobile_navbar{background-color: black;
+    display: block;
+   
+    color: white;}
+   mobile_navbar i {    padding: 15px; cursor: pointer;}
+mobile_sidebar{background-color: #14151d; transition: height .3s cubic-bezier(.2,.3,.25,.9) 0s;     position: absolute;
+    width: -webkit-fill-available;
+}
+mobile_sidebar ul{margin: 0;padding: 0;}
+mobile_sidebar a {color: #bdbdbd;text-decoration: none;}
+mobile_sidebar li{ 
+    list-style: none;
+    padding: 30px;
+    padding: 8px;
+    margin-bottom: 5px;
+    height: 22px;
+    line-height: 24px;
+    overflow: hidden;
+    transition: width 2s linear 1s;
+  }
+
+
+
+main{    
+    padding-left: 260px; 
+    transition: width .3s cubic-bezier(.2,.3,.25,.9) 0s;
+    overflow-x: hidden;
+    display: flex;
+    /* display: block; */
+}
+
+
+
+
+
+main ul{ padding-left: 22px;}
+main li{ margin-bottom: 12px;}
+second_sidebar{    background-color: #1c4269; ;
+    width: 350px;
+     display: none; 
+}
+
+
+
+contenido{     display: block; padding: 20px;}
+
+
+banner{
+    background-color: #1c4269;
+    display: block;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+banner_content{text-align: center;}
+banner_content h1{ font-size: 3em; }
+banner_content p{color: #6d8eb1;}
+
+.active{ 
+    background-color:  #335faf!important; 
+    color: white!important;
+  
+}
+.active a{ color: white!important;  }
+
+@media only screen and (max-width: 600px) {
+    sidebar {
+        display: none!important; 
+    }
+    .sidebar_link_title{ opacity: 100!important;}
+    mobile_sidebar{display: block;overflow: hidden; height: 0px;}
+    main{padding-left: 0px!important;}
+}
+
+@media only screen and (min-width: 600px) {
+    mobile_navbar{display: none!important;}
+    mobile_sidebar {
+        display: none!important; 
+    }
+ 
+}
