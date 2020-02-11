@@ -6,6 +6,7 @@
     event.stopImmediatePropagation();
     //(... rest of your JS code)
             $("#main").load('personajes/serpiente_negra.php');
+            $('html,body').scrollTop(0);
             return false;
         });
     });
