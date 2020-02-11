@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="sidebar.css"> 
+
+
+    <script src="sidebar_toogle.js"></script>
+   
+  </head>
+  <body> 
+    <mobile_navbar  > 
+    
+      <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
+      <i  style="display: none;" id="close_mobile_nav" onclick="closemobileNav()" class="fas fa-times"></i>
+    </mobile_navbar>
+    <mobile_sidebar id="mobile_sidebar"> 
+  
+      <ul id="mobile_sidebar_top_home" style="    background-color: #14151d;">   <a href="index.html"><li style="
+        padding: 15px;
+        padding-left: 23px;height: 30px;
+        padding-bottom: 5px;
+        "><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title" style="opacity: 0;"> inicio </sidebar_link_title>  </li></a></ul>
+      <ul id="sidebar_options" style=" padding: 15px; padding-top: 0;" >
+        <a href="linea_de_tiempo.html"><li ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
+        <a href="personajes.html"><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
+        <a href="especies.html" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
+        <a href="mundos.html" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+        <a href="items.html" ><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
+        <a href="hechizos.html" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
+        <a href="leyendas.html" ><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
+      </ul>
+    </mobile_sidebar>
+    <sidebar  id="sidebar">
+      <div id="included_sidebar"></div>
+      <sidebar_footer>   
+        <i   id="open_nav" onclick="openNav()" class="fas fa-angle-right"></i>
+        <i  id="close_nav" onclick="closeNav()" class="fas fa-angle-left"></i>
+      </sidebar_footer>
+    </sidebar>
+    <main id="main">    
+     
+      
+  
+      <div style=" padding: 20px; width: 100%;">
+    
+       
+  
+        <!-- ------------------------------------------------ -->
+        <!-- -------------- cosas que hacer  ---------------------- -->
+        <!-- ------------------------------------------------ -->
+        <h2  style=" margin-top: 0px;">Cosas que hacer</h2>
+    
+       
+        <ul>
+          <li> buscar nombre para la serpiente </li>
+          <li> buscar nombre para los angeles </li>
+          <li> buscar nombre para el leon </li>
+          <li> hacer que algunos primigenios adoren a el leon  </li>
+          <li> buscar nombre para la raza primigenia </li>
+          <li> darle un rol al segundo angel </li>
+      
+        </ul>
+    
+        </div>
+    </main>
+  <script> 
+    $(function(){
+      $("#included_sidebar").load("inc/sidebar.html");
+      $("#included_main").load("inc/main.html");
+    });
+  </script> 
+<script src="sidebar_toogle.js"></script>
+</html>

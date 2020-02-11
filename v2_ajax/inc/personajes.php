@@ -14,7 +14,10 @@
             return false;
         });
     });
-
+function link_to(a){
+  $("#main").load(a);
+  return false;
+}
 
 
     </script>
@@ -41,10 +44,10 @@
          <!-- ------------------------------------------------ -->
         
          <ul>
-           <li><a  class="serpiente_negra" href="#" >  La serpiente negra  </a></li>
-           <li><a href="personajes/primer_angel.html"> el primer angel </a> </li>
-           <li><a href="personajes/segundo_angel.html"> el segundo angel </a> </li>
-           <li><a href="personajes/tercer_angel.html"> el tercer angel </a> </li>
+           <li><a href="#" onclick="link_to('personajes/serpiente_negra.php')" >   La serpiente negra  </a></li>
+           <li><a href="#" onclick="link_to('personajes/primer_angel.php')" > el primer angel </a> </li>
+           <li><a href="#" onclick="link_to('personajes/segundo_angel.php')"> el segundo angel </a> </li>
+           <li><a  href="#" onclick="link_to('personajes/tercer_angel.php')"> el tercer angel </a> </li>
            <li><a href="personajes/leon_arena.html"> el leon de arena </a> </li>
            <li><a href="personajes/heredero_primer_angel.html"> el heredero de el primer angel </a> </li>
            <li> <a href="personajes/heraldo_primogenio_serpiente.html"> el heraldo primigenio de la serpiente </a></li>

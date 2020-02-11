@@ -1,3 +1,8 @@
+<style>
+  #sidebar_options .nav-item:nth-of-type(2){background-color: #335faf!important;}
+  #div-btn2{ color: white;}
+  #mobile-btn2{ background-color: #335faf!important;color: white;}
+</style>
 <contenido> 
 
     <h1  style=" margin-top: 0px; text-align: center;">Serpiente Negra </h1>
