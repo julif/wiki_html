@@ -80,6 +80,7 @@ $(document).ready(function() {
         $('li').removeClass('active');
         // $('#div-btn1').parent().addClass('active');
         $("#main").load('inc/linea_de_tiempo.php');
+        $('html,body').scrollTop(0);
         return false;
     });
 
@@ -87,6 +88,7 @@ $(document).ready(function() {
         $('li').removeClass('active');
         $('#div-btn2').parent().addClass('active');
         $("#main").load('inc/personajes.php');
+        $('html,body').scrollTop(0);
         return false;
     });
 
@@ -94,6 +96,7 @@ $(document).ready(function() {
         $('li').removeClass('active');
         $('#div-btn3').parent().addClass('active');
         $("#main").load('inc/especies.php');
+        $('html,body').scrollTop(0);
         return false;
     });
 
@@ -101,6 +104,7 @@ $(document).ready(function() {
         $('li').removeClass('active');
         $('#div-btn4').parent().addClass('active');
         $("#main").load('inc/mundos.php');
+        $('html,body').scrollTop(0);
         return false;
     });
     $('#div-btn5').on('click', function() {
@@ -113,12 +117,14 @@ $(document).ready(function() {
         $('li').removeClass('active');
         $('#div-btn6').parent().addClass('active');
         $("#main").load('inc/hechizos.php');
+        $('html,body').scrollTop(0);
         return false;
     });
     $('#div-btn7').on('click', function() {
         $('li').removeClass('active');
         $('#div-btn7').parent().addClass('active');
         $("#main").load('inc/leyendas.php');
+        $('html,body').scrollTop(0);
         return false;
     });
 });
