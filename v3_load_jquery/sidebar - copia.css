@@ -12,7 +12,7 @@ sidebar{
     overflow: hidden;
 }
 sidebar ul{margin: 0;padding: 0;}
-sidebar a{  color: #bdbdbd;   display: block; text-decoration: none;}
+sidebar a{  color: #bdbdbd;;     text-decoration: none;}
 sidebar li{ 
   list-style: none;
   padding: 30px;
@@ -24,6 +24,7 @@ sidebar li{
   transition: width 2s linear 1s;
 }
 sidebar #sidebar_options li:hover{ background-color: #24252d;color: white;}
+#mobile_sidebar_options a{ display: block;}
 
 sidebar_link_title{    
     text-transform: capitalize;  
@@ -41,6 +42,7 @@ sidebar_footer{
     text-align: center;
     cursor: pointer;
 }
+.nav-link{    display: block;}
 #open_nav{ 
     width: 80px;
     display: inherit;

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    <!-- --- Jquery --- --> 
+  <title></title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="sidebar.css"> 
+  <!-- <style>
+ #sidebar_top_home{background-color: #335faf!important;}
+ #sidebar_top_home a{    color: #ffffff;}
+
+ #mobile_sidebar_top_home{background-color: #335faf!important;}
+ #mobile_sidebar_top_home a{    color: #ffffff;}
+  </style> -->
+  <script>
+     var main_menu = [
+    { 
+      nombre : 'Linea de tiempo',
+      identificador : 'linea_de_tiempo'
+    },
+    { 
+      nombre : 'Personajes',
+      identificador : 'personaes'
+    },
+    { 
+      nombre : 'Especies',
+      descripcion : 'segundo de los angeles',
+      identificador : 'especies'
+    },
+    { 
+      nombre : 'Mundos',
+      identificador : 'mundos'
+    },
+    { 
+      nombre : 'Items',
+      identificador : 'items'
+    },
+    { 
+      nombre : 'Hechizos',
+      identificador : 'hechizos'
+    },
+    { 
+      nombre : 'Leyendas',
+      identificador : 'leyendas'
+    }
+    ]; 
+  </script>
+</head>
+<body id="content"> 
+
+</body>   
+<script>
+   // mostrar primer menu
+   for (i = 0; i <  main_menu.length; i++) {
+    document.getElementById("content").innerHTML += "<a  href='"+ main_menu[i].identificador +".html' id='"+ main_menu[i].identificador +"' > "+ main_menu[i].nombre +" </a> </br>";
+  }
+</script>
+<!-- <script>
+
+function openmobileNav() {
+  // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+  document.getElementById("mobile_sidebar").style.height = "auto";
+  document.getElementById("open_mobile_nav").style.display = "none";
+   document.getElementById("close_mobile_nav").style.display = "inherit";
+  }
+
+  function closemobileNav() {
+  // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+  document.getElementById("mobile_sidebar").style.height = "0px";
+  document.getElementById("open_mobile_nav").style.display = "inherit";
+   document.getElementById("close_mobile_nav").style.display = "none";
+  }
+</script>
+<script src="sidebar_toogle.js"></script> -->
+</html>

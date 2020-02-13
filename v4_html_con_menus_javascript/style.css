@@ -4,7 +4,7 @@ body{
     margin: 0px auto;
     font-weight: 600;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -44,7 +44,7 @@ contenido{padding: 20px;     width: -webkit-fill-available;}
 main{    
     padding-left: 260px; 
     transition: width .3s cubic-bezier(.2,.3,.25,.9) 0s;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     /* display: block; */
 }
@@ -83,9 +83,6 @@ second_sidebar{    background-color: #1c4269; ;
 
 
 
-
-
-
 banner{
     background-color: #1c4269;
     display: block;
@@ -97,13 +94,13 @@ banner{
     display: flex;
     justify-content: center;
   }
-  banner_content{text-align: center;}
-  banner_content h1{ font-size: 3em; }
-  banner_content p{color: #6d8eb1;}
-  contenido{     display: block; padding: 20px;}
-  contenido a{ color: #335faf;; text-decoration: none;}
-  contenido a:hover { color: #335faf; text-decoration: underline;}
-  .susurro{color: #a5a5a59e; padding-top: 10px;
-  padding-bottom: 10px;}
-  contenido section{ background-color:     background-color: #ffffff; }
-  /* section h2{text-decoration: underline;} */
+banner_content{text-align: center;}
+banner_content h1{ font-size: 3em; }
+banner_content p{color: #6d8eb1;}
+contenido{     display: block; padding: 20px;}
+ contenido a{ color: #335faf;; text-decoration: none;}
+ contenido a:hover { color: #335faf; text-decoration: underline;}
+ .susurro{color: #a5a5a59e; padding-top: 10px;
+padding-bottom: 10px;}
+contenido section{ background-color:     background-color: #ffffff; }
+/* section h2{text-decoration: underline;} */

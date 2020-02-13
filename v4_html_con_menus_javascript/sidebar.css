@@ -12,7 +12,7 @@ sidebar{
     overflow: hidden;
 }
 sidebar ul{margin: 0;padding: 0;}
-sidebar a{  color: #bdbdbd;   display: block; text-decoration: none;}
+sidebar a{  color: #bdbdbd;;     text-decoration: none;}
 sidebar li{ 
   list-style: none;
   padding: 30px;

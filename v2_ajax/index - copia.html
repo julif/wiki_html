@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load page with Ajax Demo</title>
+<meta name="description" content="Load page with Ajax Demo..."/>
+<meta name="author" content="Jose Aguilar">
+<link rel="shortcut icon" href="https://www.jose-aguilar.com/blog/wp-content/themes/jaconsulting/favicon.ico" />
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="sidebar.css"> 
+
+
+<script src="sidebar_toogle.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#mobile-btn1').on('click', function() {
+            $("#main").load('inc/linea_de_tiempo.php');
+
+            // $('#mobile-btn1').addClass('active');
+            // $('#div-btn1').parent().addClass('active');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+    
+        $('#mobile-btn2').on('click', function() {
+            $("#main").load('inc/personajes.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+    
+        $('#mobile-btn3').on('click', function() {
+            $("#main").load('inc/especies.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+    
+        $('#mobile-btn4').on('click', function() {
+            $("#main").load('inc/mundos.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+        $('#mobile-btn5').on('click', function() {
+            $("#main").load('inc/items.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+        $('#mobile-btn6').on('click', function() {
+            $("#main").load('inc/hechizos.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+        $('#mobile-btn7').on('click', function() {
+            $("#main").load('inc/leyendas.php');
+            $('li').removeClass('active');
+            closemobileNav();
+            return false;
+        });
+    });
+    </script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#div-btn1').on('click', function() {
+        $('li').removeClass('active');
+        // $('#div-btn1').parent().addClass('active');
+        $("#main").load('inc/linea_de_tiempo.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+
+    $('#div-btn2').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn2').parent().addClass('active');
+        $("#main").load('inc/personajes.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+
+    $('#div-btn3').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn3').parent().addClass('active');
+        $("#main").load('inc/especies.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+
+    $('#div-btn4').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn4').parent().addClass('active');
+        $("#main").load('inc/mundos.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+    $('#div-btn5').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn5').parent().addClass('active');
+        $("#main").load('inc/items.php');
+        return false;
+    });
+    $('#div-btn6').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn6').parent().addClass('active');
+        $("#main").load('inc/hechizos.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+    $('#div-btn7').on('click', function() {
+        $('li').removeClass('active');
+        $('#div-btn7').parent().addClass('active');
+        $("#main").load('inc/leyendas.php');
+        $('html,body').scrollTop(0);
+        return false;
+    });
+});
+</script>
+
+    
+</head>
+
+<body>
+
+
+    <mobile_navbar  > 
+  
+        <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
+        <i  style="display: none;" id="close_mobile_nav" onclick="closemobileNav()" class="fas fa-times"></i>
+      </mobile_navbar>
+      <mobile_sidebar id="mobile_sidebar"> 
+    
+        <ul id="mobile_sidebar_top_home" style="    background-color: #14151d;">   
+            <a href="index.html">
+                <li style="padding: 15px;padding-left: 23px;height: 30px;padding-bottom: 5px;" class="active">
+                    <i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title" style="opacity: 0;"> inicio </sidebar_link_title>  
+                </li>
+            </a>
+        </ul>
+        <ul id="mobile_sidebar_options" style=" padding: 15px; padding-top: 0;" >
+          <a id="mobile-btn1" href="#" ><li ><i class="fas fa-sitemap"></i>  <sidebar_link_title class="sidebar_link_title"> linea de tiempo</sidebar_link_title>  </li></a>
+          <a id="mobile-btn2" href="#" ><li><i class="fas fa-user"></i>  <sidebar_link_title class="sidebar_link_title"> personajes </sidebar_link_title> </li></a>
+          <a id="mobile-btn3" href="#" ><li > <i class="fas fa-address-book"></i><sidebar_link_title class="sidebar_link_title"> especie </sidebar_link_title>  </li> </a>
+          <a id="mobile-btn4" href="#" ><li ><i class="fas fa-globe-americas"></i> <sidebar_link_title class="sidebar_link_title"> mundos </sidebar_link_title>  </li></a>
+          <a id="mobile-btn5" href="#"><li ><i class="fas fa-cube"></i> <sidebar_link_title class="sidebar_link_title"> items </sidebar_link_title>  </li></a>
+          <a id="mobile-btn6" href="#" ><li > <i class="fas fa-magic"></i> <sidebar_link_title class="sidebar_link_title"> hechizos </sidebar_link_title>  </li></a>
+          <a id="mobile-btn7" href="#"><li > <i class="fas fa-atlas"></i> <sidebar_link_title class="sidebar_link_title"> leyendas </sidebar_link_title>  </li></a>
+        </ul>
+      </mobile_sidebar>
+   
+    <sidebar  id="sidebar">
+        <ul id="sidebar_top_home"  style="    background-color: black;">   <a href="index.html">
+            <!-- <li style="    padding: 15px;
+            padding-left: 22px;"><i class="fas fa-home"></i>    <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title>  </li></a> -->
+
+<li class="nav-item  active" style="    padding: 15px; padding-left: 22px; overflow: hidden;">
+    <a class="nav-link" href="index.html"> </i> <i class="fas fa-home"></i> <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title> </a>
+</li>
+            </ul>
+        <ul id="sidebar_options" style=" padding: 15px;" > 
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="index.html"> <i class="fas fa-home"></i>   Inicio </a>
+            </li> -->
+            <li class="nav-item ">
+                <a class="nav-link" id="div-btn1" href="#"> </i> <i class="fas fa-sitemap"></i> Linea De Tiempo </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn2" href="#"> <i class="fas fa-user"> </i> Personajes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn3" href="#"> <i class="fas fa-address-book"></i> Especies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn4" href="#"><i class="fas fa-globe-americas"></i> Mundos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn5" href="#"><i class="fas fa-cube"></i> Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn6" href="#"><i class="fas fa-magic"></i> Hechizos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="div-btn7" href="#"><i class="fas fa-atlas"></i> Leyendas</a>
+            </li>
+       </ul>
+        <sidebar_footer>   
+          <i   id="open_nav" onclick="openNav()" class="fas fa-angle-right"></i>
+          <i  id="close_nav" onclick="closeNav()" class="fas fa-angle-left"></i>
+         </sidebar_footer>
+
+    </sidebar>
+             
+             
+             
+              
+          
+            <main id="main">
+          
+      <!-- ------------------------------------------------ -->
+      <!-- -------------- cosas que hacer  ---------------------- -->
+      <!-- ------------------------------------------------ -->
+     
+      <contenido> 
+    
+        <h2  style=" margin-top: 0px;">Cosas que hacer</h2>
+
+        <ul>
+            <li> buscar nombre para la serpiente </li>
+            <li> buscar nombre para los angeles </li>
+            <li> buscar nombre para el leon </li>
+            <li> hacer que algunos primigenios adoren a el leon  </li>
+            <li> buscar nombre para la raza primigenia </li>
+            <li> darle un rol al segundo angel </li>
+        
+          </ul>
+    
+    
+    
+        </contenido>
+  
+     
+      
+
+
+</main>
+            
+   
+
+    
+
+<script>
+
+    function openmobileNav() {
+      // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+      document.getElementById("mobile_sidebar").style.height = "auto";
+      document.getElementById("open_mobile_nav").style.display = "none";
+       document.getElementById("close_mobile_nav").style.display = "inherit";
+      }
+    
+      function closemobileNav() {
+      // document.getElementById("mobile_sidebar").style.transition = "all 0s ease 0s";
+      document.getElementById("mobile_sidebar").style.height = "0px";
+      document.getElementById("open_mobile_nav").style.display = "inherit";
+       document.getElementById("close_mobile_nav").style.display = "none";
+      }
+    </script>
+
+
+<script src="sidebar_toogle.js"></script>
+</body>
+
+</html>

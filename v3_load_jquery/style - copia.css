@@ -39,7 +39,7 @@ mobile_sidebar li{
     transition: width 2s linear 1s;
   }
 
-contenido{padding: 20px;     width: -webkit-fill-available;}
+
 
 main{    
     padding-left: 260px; 
@@ -62,6 +62,31 @@ second_sidebar{    background-color: #1c4269; ;
 
 
 
+contenido{     display: block; padding: 20px;}
+
+
+banner{
+    background-color: #1c4269;
+    display: block;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+banner_content{text-align: center;}
+banner_content h1{ font-size: 3em; }
+banner_content p{color: #6d8eb1;}
+
+.active{ 
+    background-color:  #335faf!important; 
+    color: white!important;
+  
+}
+.active a{ color: white!important;  }
+
 @media only screen and (max-width: 600px) {
     sidebar {
         display: none!important; 
@@ -78,32 +103,3 @@ second_sidebar{    background-color: #1c4269; ;
     }
  
 }
-
-
-
-
-
-
-
-
-banner{
-    background-color: #1c4269;
-    display: block;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: center;
-  }
-  banner_content{text-align: center;}
-  banner_content h1{ font-size: 3em; }
-  banner_content p{color: #6d8eb1;}
-  contenido{     display: block; padding: 20px;}
-  contenido a{ color: #335faf;; text-decoration: none;}
-  contenido a:hover { color: #335faf; text-decoration: underline;}
-  .susurro{color: #a5a5a59e; padding-top: 10px;
-  padding-bottom: 10px;}
-  contenido section{ background-color:     background-color: #ffffff; }
-  /* section h2{text-decoration: underline;} */

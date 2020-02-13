@@ -1,0 +1,17 @@
+<ul id="mobile_sidebar_top_home" style="    background-color: #14151d;">   
+  <a  id="mobile_sidebar_home_link" href="#">
+    <li style="padding: 15px; padding-left: 23px; height: 30px; padding-bottom: 5px;">
+      <i class="fas fa-home"></i>    
+      <sidebar_link_title class="sidebar_link_title" style="opacity: 0;"> inicio </sidebar_link_title>  
+    </li>
+  </a>
+</ul>
+<ul id="mobile_sidebar_options" style=" padding: 15px; padding-top: 0;" >
+  <script>
+    // mostrar primer menu mobile
+    for (i = 0; i <  main_menu.length; i++) {
+     document.getElementById("mobile_sidebar_options").innerHTML += "<a  href='"+ ruta_absoluta + main_menu[i].id +".html' id='mobile_"+ main_menu[i].id +"_link' > <li ><i class='"+ main_menu[i].icon +"'></i> "+ main_menu[i].nombre +" </li ></a>";
+    }
+    document.getElementById("mobile_sidebar_home_link").href= ruta_absoluta +'index.html'; 
+ </script>
+</ul>

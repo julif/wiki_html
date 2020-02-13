@@ -1,0 +1,17 @@
+<ul id="sidebar_top_home"  style="    background-color: black;">   
+  <a  id="sidebar_home_link" href= "#">
+    <li style="    padding: 15px; padding-left: 22px;">
+      <i class="fas fa-home"></i>    
+      <sidebar_link_title class="sidebar_link_title"> inicio </sidebar_link_title>  
+    </li>
+  </a>
+</ul>
+<ul id="sidebar_options" style=" padding: 15px;" >
+  <script>
+    // mostrar primer menu
+    for (i = 0; i <  main_menu.length; i++) {
+     document.getElementById("sidebar_options").innerHTML += "<a  href='" + ruta_absoluta + main_menu[i].id +".html' id='"+ main_menu[i].id +"_link' > <li ><i class='"+ main_menu[i].icon +"'></i> "+ main_menu[i].nombre +" </li ></a>";
+   }
+   document.getElementById("sidebar_home_link").href= ruta_absoluta +'index.html'; 
+ </script>
+</ul>

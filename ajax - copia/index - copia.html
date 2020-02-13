@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load page with Ajax Demo</title>
+<meta name="description" content="Load page with Ajax Demo..."/>
+<meta name="author" content="Jose Aguilar">
+<link rel="shortcut icon" href="https://www.jose-aguilar.com/blog/wp-content/themes/jaconsulting/favicon.ico" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#div-btn1').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#main").load('inc/presentation.php');
+        return false;
+    });
+
+    $('#div-btn2').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#main").load('inc/products.php');
+        return false;
+    });
+
+    $('#div-btn3').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#main").load('inc/news.php');
+        return false;
+    });
+
+    $('#div-btn4').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#main").load('inc/contact.php');
+        return false;
+    });
+});
+</script>
+</head>
+
+<body>
+
+
+
+   
+ 
+             
+             
+             
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn1" href="#">Presentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn2" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn3" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn4" href="#">Contact</a>
+                        </li>
+              
+          
+            <div id="main">
+          texto del index
+            </div>
+            
+   
+
+    
+
+
+
+
+
+</body>
+</html>

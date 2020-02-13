@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    <!-- --- Jquery --- --> 
+  <title></title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="sidebar.css"> 
+ <style>
+    #sidebar_top_home{background-color: #335faf!important;}
+    #sidebar_top_home a{    color: #ffffff;}
+
+    #mobile_sidebar_top_home{background-color: #335faf!important;}
+    #mobile_sidebar_top_home a{    color: #ffffff;}
+  </style> 
+  <script src="menu_links.js"></script> 
+</head>
+<body>
+  <mobile_navbar  > 
+    <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
+    <i  style="display: none;" id="close_mobile_nav" onclick="closemobileNav()" class="fas fa-times"></i>
+  </mobile_navbar>
+  <mobile_sidebar id="mobile_sidebar"> 
+    <div id="included_mobile_sidebar"></div>
+  </mobile_sidebar>
+  <sidebar id="sidebar">
+    <div id="included_sidebar"></div>
+    <sidebar_footer>   
+      <i   id="open_nav" onclick="openNav()" class="fas fa-angle-right"></i>
+      <i  id="close_nav" onclick="closeNav()" class="fas fa-angle-left"></i>
+    </sidebar_footer>
+  </sidebar>
+  <main id="main">
+    <contenido>
+   
+      <h2  style=" margin-top: 0px;">Cosas que hacer</h2>
+      <ul>
+        <li> buscar nombre para la serpiente </li>
+        <li> buscar nombre para los angeles </li>
+        <li> buscar nombre para el leon </li>
+        <li> hacer que algunos primigenios adoren a el leon  </li>
+        <li> buscar nombre para la raza primigenia </li>
+        <li> darle un rol al segundo angel </li>
+      </ul>
+    </contenido>
+  </main>
+</body>   
+<script> 
+$(function(){
+  $("#included_sidebar").load("sidebar.html");
+  $("#included_mobile_sidebar").load("mobile_sidebar.html");
+  // $("#included_main").load("inc/main.html");
+});
+</script> 
+<script> </script>
+<script src="ruta_absoluta.js"></script>
+<script src="mobile_sidebar_toogle.js"></script> 
+<script src="sidebar_toogle.js"></script> 
+</html>
