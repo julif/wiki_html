@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    <!-- --- Jquery --- --> 
   <title></title>
   <link rel="stylesheet" href="style.css"> 
-  <link rel="stylesheet" href="sidebar.css"> 
+  <link rel="stylesheet" href="css/sidebar.css"> 
  <style>
     #sidebar_top_home{background-color: #335faf!important;}
     #sidebar_top_home a{    color: #ffffff;}
@@ -15,7 +15,7 @@
     #mobile_sidebar_top_home{background-color: #335faf!important;}
     #mobile_sidebar_top_home a{    color: #ffffff;}
   </style> 
-  <script src="menu_links.js"></script> 
+  <script src="js/menu_links.js"></script> 
 </head>
 <body>
   <mobile_navbar  > 
@@ -49,13 +49,13 @@
 </body>   
 <script> 
 $(function(){
-  $("#included_sidebar").load("sidebar.html");
-  $("#included_mobile_sidebar").load("mobile_sidebar.html");
+  $("#included_sidebar").load("partial/sidebar.html");
+  $("#included_mobile_sidebar").load("partial/mobile_sidebar.html");
   // $("#included_main").load("inc/main.html");
 });
 </script> 
 <script> </script>
-<script src="ruta_absoluta.js"></script>
-<script src="mobile_sidebar_toogle.js"></script> 
-<script src="sidebar_toogle.js"></script> 
+<script src="js/ruta_absoluta.js"></script>
+<script src="js/mobile_sidebar_toogle.js"></script> 
+<script src="js/sidebar_toogle.js"></script> 
 </html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- hacer que el ancho se adapte a dispositivos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    <!-- --- Jquery --- --> 
+  <title> Especies </title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="css/sidebar.css"> 
+ <style>
+ #especies_link li{background-color: #335faf!important; color: #ffffff!important;  display: block;}
+ #mobile_especies_link li{background-color: #335faf!important; color: #ffffff!important;  display: block;}
+</style> 
+<script src="js/menu_links.js"></script> 
+</head>
+<body>
+  <mobile_navbar  > 
+    <i   id="open_mobile_nav" onclick="openmobileNav()" class="fas fa-bars"></i>
+    <i  style="display: none;" id="close_mobile_nav" onclick="closemobileNav()" class="fas fa-times"></i>
+  </mobile_navbar>
+  <mobile_sidebar id="mobile_sidebar"> 
+    <div id="included_mobile_sidebar"></div>
+  </mobile_sidebar>
+  <sidebar id="sidebar">
+    <div id="included_sidebar"></div>
+    <sidebar_footer>   
+      <i   id="open_nav" onclick="openNav()" class="fas fa-angle-right"></i>
+      <i  id="close_nav" onclick="closeNav()" class="fas fa-angle-left"></i>
+    </sidebar_footer>
+  </sidebar>
+  <main id="main"> 
+    <second_sidebar> hola </second_sidebar>
+    <div style="width: -webkit-fill-available;">
+       <banner>
+         <banner_content>    
+            <h1 style=" margin-top: 0px;">Especies</h1>
+            <p> texto de especies </p> 
+         </banner_content>
+       </banner>
+ 
+       <contenido> 
+    
+ 
+             <!-- ------------------------------------------------ -->
+     <!-- -------------- especies ---------------------- -->
+     <!-- ------------------------------------------------ -->
+     <h2  style=" margin-top: 0px;">Especies</h2>
+     <ul>
+       <li> <a href="especies/celestiales.html">  Celestiales </a></li>
+       <ul> 
+         <li><a href="especies/angeles.html">  Angeles </a></li>
+         <li><a href="especies/angeles.html">  Altos Guardianes </a></li>
+       </ul>
+       <li> <a href="especies/demonios.html">  Demonios </a> </li>
+       <ul> 
+         <li><a href="especies/primogenios_corruptos.html">  Primogenios corruptos </a></li>
+         <li><a href="especies/dioses_demoniacos.html">  Dioses demoniacos </a></li>
+         
+       </ul>
+       <li> <a href="especies/dioses.html">  Dioses </a> </li>
+       <ul> 
+         <li><a href="especies/dioses_demoniacos.html">  Dioses demoniacos </a></li>
+       
+       </ul>
+      
+       <li><a href="especies/primigenios.html">  Raza primigenia </a></li>
+       <ul>
+         <li><a href="especies/primogenios_corruptos.html">  Primogenios corruptos </a></li>
+         <li><a href="especies/guardianes_tiempo.html">  guardianes de el tiempo </a></li>
+         <li><a href="especies/depredadores.html">  Depredadores </a></li>
+       
+       </ul>
+       <li> <a href="especies/especie_nix.html">  especie de nix </a> </li>
+     </ul>
+       
+       
+       </contenido>
+      
+   
+   
+</main>
+</body>   
+<script> 
+  $(function(){
+    $("#included_sidebar").load("partial/sidebar.html");
+    $("#included_mobile_sidebar").load("partial/mobile_sidebar.html");
+    // $("#included_main").load("inc/main.html");
+  });
+  </script> 
+  <script src="js/ruta_absoluta.js"></script>
+<script src="js/mobile_sidebar_toogle.js"></script> 
+<script src="js/sidebar_toogle.js"></script> 
+</html>
