@@ -2,19 +2,22 @@
   if ( localStorage.julifproyect_sidebar_status == null || localStorage.julifproyect_sidebar_status == "open") {
     openNav();
  }
+
 else{
   //para hacer que la app se mobile voy a tener que cambiar los padings y widths por clases deonde esten incluidas las cuales puedo controlar con media-query para que no aparezcan en movile
  // closeNav();
  console.log(localStorage.julifproyect_sidebar_status);
+ 
+ var x = document.getElementsByClassName("sidebar_link_title");
+ //var i;for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ var i;for (i = 0; i < x.length; i++) {x[i].style.opacity = "0";}
+
  document.getElementById("sidebar").style.width = "65px";
  document.getElementById("sidebar").style.transition = "all 0s ease 0s";
  document.getElementById("main").style.paddingLeft = "65px";
  document.getElementById("main").style.transition = "all 0s ease 0s";
  document.getElementById("open_nav").style.display = "inherit";
  document.getElementById("close_nav").style.display = "none";
- var x = document.getElementsByClassName("sidebar_link_title");
- //var i;for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
- var i;for (i = 0; i < x.length; i++) {x[i].style.opacity = "0";}
 };
      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
  function openNav() {
