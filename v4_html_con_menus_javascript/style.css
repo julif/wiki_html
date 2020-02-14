@@ -4,6 +4,7 @@ body{
     margin: 0px auto;
     font-weight: 600;
     width: 100%;
+    background-color: #f3f3f3;
     /* overflow: hidden; */
 
 }
@@ -39,13 +40,25 @@ mobile_sidebar li{
     transition: width 2s linear 1s;
   }
 
-contenido{padding: 20px;     width: -webkit-fill-available;}
+contenido{
+    padding: 20px;    
+     width: -webkit-fill-available;
+     margin: 0px auto;
+    max-width: 900px;
+    background-color: white;
+    margin-top: 20px;
+    }
+    /* @media only screen and (min-width: 1240) { contenido{ max-width: 20px;} } */
+     @media (max-width: 1211px) { contenido{ margin-top: 0px!important;}  body{ background-color: white;} } 
+
 
 main{    
     padding-left: 260px; 
     transition: width .3s cubic-bezier(.2,.3,.25,.9) 0s;
     /* overflow-x: hidden; */
     display: flex;
+    background-color: #f3f3f3;
+
     /* display: block; */
 }
 

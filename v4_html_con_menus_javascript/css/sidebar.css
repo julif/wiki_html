@@ -10,8 +10,18 @@ sidebar{
     z-index: 2;
     transition: width .3s cubic-bezier(.2,.3,.25,.9) 0s;
     overflow: hidden;
+
+     background-image: url(../img/sidebar-5.jpg); 
+     background-size: cover;
+     background-position: 50%;
+
+
 }
 sidebar ul{margin: 0;padding: 0;}
+sidebar:before {
+    opacity: .33;
+    background: #000;
+}
 sidebar a{  color: #bdbdbd;;     text-decoration: none;}
 sidebar li{ 
   list-style: none;
@@ -23,7 +33,13 @@ sidebar li{
   overflow: hidden;
   transition: width 2s linear 1s;
 }
-sidebar #sidebar_options li:hover{ background-color: #24252d;color: white;}
+sidebar #sidebar_options li:hover{
+     background-color: #24252d;color: white;
+
+     background-color: #6e9bb126;
+    color: white;
+    background-blend-mode: overlay;
+    }
 
 sidebar_link_title{    
     text-transform: capitalize;  
@@ -70,3 +86,9 @@ sidebar_footer{
     content: "\f104";
     padding-right: 10px;
 }
+
+
+
+
+
+#sidebar_top_home{   position: relative; z-index: 2;}
